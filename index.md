@@ -21,6 +21,8 @@ We need a fully-featured production-ready homeserver which can be embedded into 
     * ❌ Server-Server API: 95%, aim: 100%
 - Embeddability:
     * ✅ Embeddable database (SQLite3)
+    {: .blue}
     * ✅ WASM
-    * ✅ Android
+{: .blue}
+    * ✅ Android {: .blue}
     * ✅ iOS
