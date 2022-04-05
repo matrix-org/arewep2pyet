@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "";
+@import "{{ site.theme }}";
 
-li::marker {
-    color: #f00;
+li ul {
+    list-style-type: ">> ";
 }

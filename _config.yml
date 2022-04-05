@@ -1,10 +1,5 @@
 name: "Are We P2P Yet?"
-title: null
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
+title: "Are We P2P Yet?"
 include:
   - index.md
 
