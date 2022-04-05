@@ -1,4 +1,4 @@
-![Matrix](/assets/images/matrix-logo-white.svg)
+[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org) _Last updated: 05/04/2022_
 
 ```
                                         ____                      _   ___ 
@@ -9,11 +9,7 @@
                                   |_|        |_|       |___/                
 ```
 
-![Matrix](/assets/images/matrix-logo-white.svg)
-
 # Not Yet.
-
-![Matrix](/assets/images/matrix-logo-white.svg)
 
 Track the progress of P2P [Matrix](https://matrix.org).
 
