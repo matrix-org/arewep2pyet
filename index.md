@@ -26,3 +26,7 @@ We need a fully-featured production-ready homeserver which can be embedded into 
     * ✅ WASM
     * ✅ Android
     * ✅ iOS
+
+![Matrix](matrix-logo-white.svg)
+
+![Matrix](/assets/images/matrix-logo-white.svg)
