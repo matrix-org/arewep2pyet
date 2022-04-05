@@ -1,3 +1,5 @@
+![Matrix](/assets/images/matrix-logo-white.svg)
+
 ```
                                         ____                      _   ___ 
   __ _ _ __ ___   __      _____    _ __|___ \ _ __     _   _  ___| |_/ _ \
@@ -7,7 +9,11 @@
                                   |_|        |_|       |___/                
 ```
 
+![Matrix](/assets/images/matrix-logo-white.svg)
+
 # Not Yet.
+
+![Matrix](/assets/images/matrix-logo-white.svg)
 
 Track the progress of P2P [Matrix](https://matrix.org).
 
@@ -26,7 +32,3 @@ We need a fully-featured production-ready homeserver which can be embedded into 
     * ✅ WASM
     * ✅ Android
     * ✅ iOS
-
-![Matrix](matrix-logo-white.svg)
-
-![Matrix](/assets/images/matrix-logo-white.svg)
