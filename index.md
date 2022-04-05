@@ -17,10 +17,10 @@ We need a fully-featured production-ready homeserver which can be embedded into 
 
 <!-- TODO: Automatically generate -->
 - Synapse parity: (as of [cee12a7](https://github.com/matrix-org/dendrite/commit/cee12a7ab06c0b41499e13ccd8d4ea3cd4832ab0))
-    * [ ] Client-Server API: 77%, aim: >90%
-    * [ ] Server-Server API: 95%, aim: 100%
+    * ❌ Client-Server API: 77%, aim: >90%
+    * ❌ Server-Server API: 95%, aim: 100%
 - Embeddability:
-    * {:id: .incomplete} [x] Embeddable database (SQLite3)
-    * {:id: .complete} [x] WASM
-    * [x] Android
-    * [x] iOS
+    * ✅ Embeddable database (SQLite3)
+    * ✅ WASM
+    * ✅ Android
+    * ✅ iOS
