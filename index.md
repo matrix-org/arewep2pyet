@@ -1,3 +1,6 @@
+---
+image: https://arewep2pyet.com/assets/images/logo.png
+---
 [![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 05/04/2022_
 
 ```
