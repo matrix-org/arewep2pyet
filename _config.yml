@@ -4,3 +4,7 @@ include:
   - index.md
 
 theme: jekyll-theme-hacker
+
+twitter:
+  username: matrixdotorg
+  card: summary_large_image
