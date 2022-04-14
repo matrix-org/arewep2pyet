@@ -65,8 +65,10 @@ We need a production-ready [overlay network](https://en.wikipedia.org/wiki/Overl
     * 🚧 Churn attacks
     * 🚧 Root hijacking attacks
     * 🚧 Malicious packet drop attacks
-- ✅ Good (>80%) performance in Mobility tests.
-
+- ✅ Good (>80% median) packet arrival performance in Mobility tests
+    * Mobility is defined as 50 randomly placed nodes in a 1x1km square, each randomly moving 10m every 10s
+    * Mobility testing is performed for 60 iterations of node movement
+    * Packet arrival performance is measured using pings between a subset of randomly selected nodes at least 2 hops apart at each mobility step
 ### Matrix
 
 We need to improve the Federation protocol to work with servers which frequently go offline and may have 1000s of servers (p2p nodes) in each room.
