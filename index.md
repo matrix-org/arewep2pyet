@@ -66,8 +66,8 @@ We need a production-ready [overlay network](https://en.wikipedia.org/wiki/Overl
     * 🚧 Root hijacking attacks
     * 🚧 Malicious packet drop attacks
 - ✅ Good (>80% median) packet arrival performance in Mobility tests
-    * Mobility is defined as 50 randomly placed nodes in a 1x1km square, each randomly moving 10m every 10s
-    * Mobility testing is performed for 60 iterations of node movement
+    * Mobility is defined as 50 randomly placed nodes in a 1x1km square, each randomly moving 0-20m every 10s
+    * Mobility testing is performed for 360 iterations of node movement
     * Packet arrival performance is measured using pings between a subset of randomly selected nodes at least 2 hops apart at each mobility step
 
 ### Matrix
