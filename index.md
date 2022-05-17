@@ -1,7 +1,7 @@
 ---
 image: https://arewep2pyet.com/assets/images/logo.png
 ---
-[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-04-16_
+[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-05-17_
 
 ```
                                         ____                      _   ___ 
@@ -27,9 +27,9 @@ Track the progress of P2P [Matrix](https://matrix.org) and join us at [#p2p:matr
 We need a fully-featured production-ready homeserver which can be embedded into a range of clients, from mobile devices to web browsers.
 
 <!-- TODO: Automatically generate -->
-- Synapse parity: (as of [f7109de](https://github.com/matrix-org/dendrite/runs/5836736553?check_suite_focus=true))
-    * 🚧 Client-Server API: 81%, aim: >90%
-    * 🚧 Server-Server API: 94%, aim: 100%
+- Synapse parity: (as of [05607d6](https://github.com/matrix-org/dendrite/runs/6457142794?check_suite_focus=true))
+    * 🚧 Client-Server API: 86%, aim: >90%
+    * 🚧 Server-Server API: 93%, aim: 100%
 - Embeddability:
     * ✅ Embeddable database (SQLite3)
     * ✅ WASM
@@ -39,7 +39,7 @@ We need a fully-featured production-ready homeserver which can be embedded into 
     * ❌ Ensure memory usage of embedded instances is bounded e.g cache sizes.
     * ❌ Ensure CPU usage of embedded instances is bounded e.g # spawned goroutines.
 - Stability and Maintenance:
-    * 🚧 Test coverage >=80% for code used in embedded instances: ??% (as of xxxx) <!-- TODO: Automatically generate -->
+    * 🚧 Test coverage >=80% for code used in embedded instances: 72.4% (as of [05607d6](https://github.com/matrix-org/dendrite/commit/05607d6b8734738bd5c32288e3d0ef8e827d11d0), sytest coverage only, excludes Complement and unit tests)
     * 🚧 Active and timely (<7d) triage over main issue tracker.
     * 🚧 dendrite.matrix.org metrics are healthy (Sentry, Prometheus)
 
@@ -75,7 +75,9 @@ We need a production-ready [overlay network](https://en.wikipedia.org/wiki/Overl
 We need to improve the Federation protocol to work with servers which frequently go offline and may have 1000s of servers (p2p nodes) in each room.
 
 - ❌ Implement comprehensive Store-and-Forward event routing capabilities in Matrix to allow nodes to talk to each other even if they aren't online at the same time. Matrix currently has limited support for this via backfilling events.
-- ❌ Improve [event authentication rules](https://spec.matrix.org/unstable/server-server-api/#checks-performed-on-receipt-of-a-pdu) when the majority of nodes in the room are unreachable.
+- 🚧 Improve [event authentication rules](https://spec.matrix.org/unstable/server-server-api/#checks-performed-on-receipt-of-a-pdu) when the majority of nodes in the room are unreachable.
+    * Change the protocol to include a State/Auth DAG in addition to a normal Room DAG, and ensure that the Auth DAG is shared with all servers in the room. This allows servers to authenticate any incoming event without needing to make additional API calls.
+    * Change the protocol to eagerly connect to servers to ensure we rapidly synchronise Auth DAGs, rather than waiting until the user sends a message.
 - ❌ Improve [semantic delivery of old events to clients](https://github.com/matrix-org/matrix-spec/issues/852) to ensure that when old nodes come online clients don't see lots of old messages.
 - ❌ Support delivery of push notifications to P2P devices
 - ❌ Extension: Improve delivery of media uploads (content ID based?)
