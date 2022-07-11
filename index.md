@@ -1,15 +1,15 @@
 ---
 image: https://arewep2pyet.com/assets/images/logo.png
 ---
-[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-05-17_
+[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-07-11_
 
 ```
-                                        ____                      _   ___ 
+                                        ____                      _   ___
   __ _ _ __ ___   __      _____    _ __|___ \ _ __     _   _  ___| |_/ _ \
  / _` | '__/ _ \  \ \ /\ / / _ \  | '_ \ __) | '_ \   | | | |/ _ \ __\// /
-| (_| | | |  __/   \ V  V /  __/  | |_) / __/| |_) |  | |_| |  __/ |_  \/ 
- \__,_|_|  \___|    \_/\_/ \___|  | .__/_____| .__/    \__, |\___|\__| () 
-                                  |_|        |_|       |___/                
+| (_| | | |  __/   \ V  V /  __/  | |_) / __/| |_) |  | |_| |  __/ |_  \/
+ \__,_|_|  \___|    \_/\_/ \___|  | .__/_____| .__/    \__, |\___|\__| ()
+                                  |_|        |_|       |___/
 ```
 
 # Not Yet.
@@ -22,21 +22,22 @@ Our aims are to:
 
 Track the progress of P2P [Matrix](https://matrix.org) and join us at [#p2p:matrix.org](https://matrix.to/#/#p2p:matrix.org).
 
-### Dendrite 
+### Dendrite
 
 We need a fully-featured production-ready homeserver which can be embedded into a range of clients, from mobile devices to web browsers.
 
 <!-- TODO: Automatically generate -->
-- Synapse parity: (as of [05607d6](https://github.com/matrix-org/dendrite/runs/6457142794?check_suite_focus=true))
+- Synapse parity: (as of [3ea2127](https://github.com/matrix-org/dendrite/commit/3ea21273bcc151b36eec412d0ec550642fe9b04f))
     * 🚧 Client-Server API: 86%, aim: >90%
-    * 🚧 Server-Server API: 93%, aim: 100%
+    * 🚧 Server-Server API: 95%, aim: 100%
+    * 🚧 Application-Server API: 68%
 - Embeddability:
     * ✅ Embeddable database (SQLite3)
     * ✅ WASM
     * ✅ Android
     * ✅ iOS
 - Performance:
-    * ❌ Ensure memory usage of embedded instances is bounded e.g cache sizes.
+    * 🚧 Ensure memory usage of embedded instances is bounded e.g cache sizes.
     * ❌ Ensure CPU usage of embedded instances is bounded e.g # spawned goroutines.
 - Stability and Maintenance:
     * 🚧 Test coverage >=80% for code used in embedded instances: 72.4% (as of [05607d6](https://github.com/matrix-org/dendrite/commit/05607d6b8734738bd5c32288e3d0ef8e827d11d0), sytest coverage only, excludes Complement and unit tests)
@@ -57,14 +58,14 @@ We need a production-ready [overlay network](https://en.wikipedia.org/wiki/Overl
 - Works on a range of transports:
     * ✅ Public internet
     * ✅ LANs
-    * ✅ Bluetooth LE 
+    * ✅ Bluetooth LE
 - Resilience to adversarial attacks:
-    * 🚧 Sybil attacks
-    * 🚧 Eclipse attacks
-    * 🚧 Keyspace collision attacks
+    * ✅ Sybil attacks
+    * ✅ Eclipse attacks
+    * ✅ Keyspace collision attacks
     * 🚧 Churn attacks
     * 🚧 Root hijacking attacks
-    * 🚧 Malicious packet drop attacks
+    * ✅ Malicious packet drop attacks
 - ✅ Good (>80% median) packet arrival performance in Mobility tests
     * Mobility is defined as 50 randomly placed nodes in a 1x1km square, each randomly moving 0-20m every 10s
     * Mobility testing is performed for 360 iterations of node movement
