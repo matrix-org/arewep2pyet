@@ -1,7 +1,7 @@
 ---
 image: https://arewep2pyet.com/assets/images/logo.png
 ---
-[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-10-04_
+[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-10-17_
 
 ```
                                         ____                      _   ___
@@ -27,9 +27,9 @@ Track the progress of P2P [Matrix](https://matrix.org) and join us at [#p2p:matr
 We need a fully-featured production-ready homeserver which can be embedded into a range of clients, from mobile devices to web browsers.
 
 <!-- TODO: Automatically generate -->
-- Synapse parity: (as of [3da1822](https://github.com/matrix-org/dendrite/commit/3da182212e86daca1d7019efbd424b2bd38b8b3c))
-    * 🚧 Client-Server API: 91% (571/629), aim: >90%
-    * 🚧 Server-Server API: 94% (112/119), aim: 100%
+- Synapse parity: (as of [d72d4f8](https://github.com/matrix-org/dendrite/commit/d72d4f8d5d0016a8dcbf77aba92671f3469eb630))
+    * 🚧 Client-Server API: 91% (567/624), aim: >90%
+    * 🚧 Server-Server API: 96% (114/119), aim: 100%
     * 🚧 Application-Server API: 72% (18/25)
 - Embeddability:
     * ✅ Embeddable database (SQLite3)
@@ -37,8 +37,8 @@ We need a fully-featured production-ready homeserver which can be embedded into 
     * ✅ Android
     * ✅ iOS
 - Performance:
-    * 🚧 Ensure memory usage of embedded instances is bounded e.g cache sizes.
-    * ❌ Ensure CPU usage of embedded instances is bounded e.g # spawned goroutines.
+    * ✅ Ensure memory usage of embedded instances is bounded e.g cache sizes.
+    * 🚧 Ensure CPU usage of embedded instances is bounded e.g # spawned goroutines.
 - Stability and Maintenance:
     * 🚧 Test coverage >=80% for code used in embedded instances: 72.4% (as of [05607d6](https://github.com/matrix-org/dendrite/commit/05607d6b8734738bd5c32288e3d0ef8e827d11d0), sytest coverage only, excludes Complement and unit tests)
     * 🚧 Active and timely (<7d) triage over main issue tracker.
