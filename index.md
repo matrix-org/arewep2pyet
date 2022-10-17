@@ -28,7 +28,7 @@ We need a fully-featured production-ready homeserver which can be embedded into 
 
 <!-- TODO: Automatically generate -->
 - Synapse parity: (as of [d72d4f8](https://github.com/matrix-org/dendrite/commit/d72d4f8d5d0016a8dcbf77aba92671f3469eb630))
-    * 🚧 Client-Server API: 91% (567/624), aim: >90%
+    * ✅ Client-Server API: 91% (567/624), aim: >90%
     * 🚧 Server-Server API: 96% (114/119), aim: 100%
     * 🚧 Application-Server API: 72% (18/25)
 - Embeddability:
