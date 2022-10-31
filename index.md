@@ -1,7 +1,7 @@
 ---
 image: https://arewep2pyet.com/assets/images/logo.png
 ---
-[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-10-17_
+[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-10-31_
 
 ```
                                         ____                      _   ___
@@ -27,8 +27,8 @@ Track the progress of P2P [Matrix](https://matrix.org) and join us at [#p2p:matr
 We need a fully-featured production-ready homeserver which can be embedded into a range of clients, from mobile devices to web browsers.
 
 <!-- TODO: Automatically generate -->
-- Synapse parity: (as of [d72d4f8](https://github.com/matrix-org/dendrite/commit/d72d4f8d5d0016a8dcbf77aba92671f3469eb630))
-    * ✅ Client-Server API: 91% (567/624), aim: >90%
+- Synapse parity: (as of [4c38bd7](https://github.com/matrix-org/dendrite/commit/4c38bd76ce39a557ef7085463b208cecb9fa773c))
+    * ✅ Client-Server API: 92% (573/624), aim: >90%
     * 🚧 Server-Server API: 96% (114/119), aim: 100%
 - Embeddability:
     * ✅ Embeddable database (SQLite3)
