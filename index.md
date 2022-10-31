@@ -75,7 +75,7 @@ We need a production-ready [overlay network](https://en.wikipedia.org/wiki/Overl
 
 We need to improve the Federation protocol to work with servers which frequently go offline and may have 1000s of servers (p2p nodes) in each room.
 
-- ❌ Implement comprehensive Store-and-Forward event routing capabilities in Matrix to allow nodes to talk to each other even if they aren't online at the same time. Matrix currently has limited support for this via backfilling events.
+- 🚧 Implement comprehensive Store-and-Forward event routing capabilities in Matrix to allow nodes to talk to each other even if they aren't online at the same time. Matrix currently has limited support for this via backfilling events.
 - 🚧 Improve [event authentication rules](https://spec.matrix.org/unstable/server-server-api/#checks-performed-on-receipt-of-a-pdu) when the majority of nodes in the room are unreachable.
     * Change the protocol to include a State/Auth DAG in addition to a normal Room DAG, and ensure that the Auth DAG is shared with all servers in the room. This allows servers to authenticate any incoming event without needing to make additional API calls.
     * Change the protocol to eagerly connect to servers to ensure we rapidly synchronise Auth DAGs, rather than waiting until the user sends a message.
