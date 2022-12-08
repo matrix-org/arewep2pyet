@@ -30,6 +30,16 @@ jobs:
         with:
           fetch-depth: 0
       - run: echo '' >> index.md
+      - run: echo '# Pinecone Releases' >> index.md
+      - name: Append Pinecone Releases
+        run: |
+          git clone http://github.com/matrix-org/pinecone
+          cd pinecone && git tag -n --sort=-version:refname | while IFS=$'\n' read full_tag; do
+            tag_name=$(echo ${full_tag} | awk '{print $1}')
+            tag_comment=$(echo ${full_tag} | awk '{$1=""; print}')
+            tag_link="[${tag_name}](https://github.com/matrix-org/pinecone/releases/tag/${tag_name})"
+            echo "${tag_link} - ${tag_comment}  " >> ../index.md
+          done
       - run: echo '# History' >> index.md
       - name: Append Git History
         run: git log -n 15 --abbrev-commit --date=short --decorate --format=format:'%h - (%ad) %s%n' --all | sed 's/^......./[&](https:\/\/github.com\/matrix-org\/arewep2pyet\/commit\/&)/' >> index.md
