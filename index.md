@@ -1,7 +1,7 @@
 ---
 image: https://arewep2pyet.com/assets/images/logo.png
 ---
-[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-12-08_
+[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2022-12-09_
 
 ```
                                         ____                      _   ___
@@ -45,7 +45,7 @@ We need a fully-featured production-ready homeserver which can be embedded into 
 
 ### Pinecone
 
-We need a production-ready [overlay network](https://en.wikipedia.org/wiki/Overlay_network) for P2P traffic.
+We need a production-ready [overlay network](https://en.wikipedia.org/wiki/Overlay_network) for P2P traffic. Testing pinecone is done primarily using the [simulator](https://pinecone.matrix.org) which allows for faster iteration times on protocol changes.
 
 - Experiment with existing P2P network stacks for use with Matrix:
     * ✅ libp2p
