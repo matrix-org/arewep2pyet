@@ -1,7 +1,7 @@
 ---
 image: https://arewep2pyet.com/assets/images/logo.png
 ---
-[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2023-03-13_
+[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2023-05-01_
 
 ```
                                         ____                      _   ___
@@ -80,8 +80,8 @@ We need to improve the Federation protocol to work with servers which frequently
     * ✅ Integrated into p2p demo apps
     * 🚧 Robust to differing levels of use (many user rooms, encrypted rooms, different scenarios of varying offline-ness, etc.)
 - 🚧 Improve [event authentication rules](https://spec.matrix.org/unstable/server-server-api/#checks-performed-on-receipt-of-a-pdu) when the majority of nodes in the room are unreachable.
-    * 🚧 Change the protocol to include a State/Auth DAG in addition to a normal Room DAG, and ensure that the Auth DAG is shared with all servers in the room. This allows servers to authenticate any incoming event without needing to make additional API calls.
-    * ❌ Change the protocol to eagerly connect to servers to ensure we rapidly synchronise Auth DAGs, rather than waiting until the user sends a message.
+    * 🚧 Change the protocol to utilize a Power DAG, and ensure that the Power DAG is shared with all servers in the room. This allows servers to authenticate any incoming event without needing to make additional API calls.
+    * ❌ Change the protocol to eagerly connect to servers to ensure we rapidly synchronise Power DAGs, rather than waiting until the user sends a message.
 - ❌ Improve [semantic delivery of old events to clients](https://github.com/matrix-org/matrix-spec/issues/852) to ensure that when old nodes come online clients don't see lots of old messages.
 - ❌ Support delivery of push notifications to P2P devices
 - ❌ Extension: Improve delivery of media uploads (content ID based?)
