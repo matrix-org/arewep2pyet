@@ -8,13 +8,13 @@ image: https://arewep2pyet.com/assets/images/logo.png
   __ _ _ __ ___   __      _____    _ __|___ \ _ __     _   _  ___| |_/ _ \
  / _` | '__/ _ \  \ \ /\ / / _ \  | '_ \ __) | '_ \   | | | |/ _ \ __\// /
 | (_| | | |  __/   \ V  V /  __/  | |_) / __/| |_) |  | |_| |  __/ |_  \/
- \__,_|_|  \___|    \_/\_/ \___|  | .__/_____| .__/    \__, |\___|\__| ()
+ \__,_|_|  \___|    \_/\_/ \___|  | .__/_____| .__/    \__, |\___|\__| ()``
                                   |_|        |_|       |___/
 ```
 
 # Not Yet.
 
-Check out the [Introducing P2P Matrix](https://matrix.org/blog/2020/06/02/introducing-p-2-p-matrix/) and [Introducing Pinecone](https://matrix.org/blog/2021/05/06/introducing-the-pinecone-overlay-network) blog posts for why we are doing this.
+Check out the [Introducing P2P Matrix](https://matrix.org/blog/2020/06/02/introducing-p2p-matrix/) and [Introducing Pinecone](https://matrix.org/blog/2021/05/06/introducing-the-pinecone-overlay-network) blog posts for why we are doing this.
 
 Our aims are to:
  - Bootstrap a permanent public P2P Matrix network
