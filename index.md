@@ -12,7 +12,25 @@ image: https://arewep2pyet.com/assets/images/logo.png
                                   |_|        |_|       |___/
 ```
 
-# Not Yet.
+# Not yet, but as of 2026 we're making progress again.
+
+## 2026 update
+
+P2P Matrix work has resumed at Element as of July 2026 thanks to funding from the Dutch Government.
+
+We'll update this site properly once we get a chance, but current status is:
+ * We've put together a dedicated lightweight embedded homeserver in Rust called Neutrino: https://github.com/element-hq/neutrino
+   * It is **not** intended for standalone use, and is not yet secure for use in untrusted networks (e.g. it does not sign/check event signatures yet)
+   * It only implements the very latest experimental room versions needed for P2P
+   * The intention is to share its Rust code with the Synapse and Synapse Pro in future (rather than being a divergent evolutionary branch like Dendrite was, which meant halving efforts rather than converging efforts).
+   * See the [README](https://github.com/element-hq/element-x-android-neutrino/blob/develop/README.md) for more caveats and details.
+ * Element X Android has a new P2P fork which embeds Neutrino: https://github.com/element-hq/element-x-android-neutrino
+ * We're not planning to build an overlay network. Instead, Neutrino currently uses [Iroh](https://docs.iroh.computer/) for connecting over [BLE](https://docs.iroh.computer/transports/bluetooth) and is designed for smaller meshes, in future using the normal Matrix network to backhaul between local meshes.
+
+For more info, see the slides from DWebCamp 2026: [P2P Matrix - A New Hope](/assets/pdf/2026-07-09%20DWebCamp%20P2P%20Matrix%20-%20A%20New%20Hope.pdf).
+<!-- TODO: embed the recording once it's published! -->
+
+## 2020-2023 details below:
 
 Check out the [Introducing P2P Matrix](https://matrix.org/blog/2020/06/02/introducing-p2p-matrix/) and [Introducing Pinecone](https://matrix.org/blog/2021/05/06/introducing-the-pinecone-overlay-network) blog posts for why we are doing this.
 
