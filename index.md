@@ -1,7 +1,7 @@
 ---
 image: https://arewep2pyet.com/assets/images/logo.png
 ---
-[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2023-05-01_
+[![Matrix](/assets/images/matrix-logo-white.svg)](https://matrix.org){: .logo} _Last updated: 2026-06-10_
 
 ```
                                         ____                      _   ___
