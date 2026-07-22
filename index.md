@@ -85,7 +85,7 @@ We need a production-ready [overlay network](https://en.wikipedia.org/wiki/Overl
     * 🚧 Root hijacking attacks
     * ✅ Malicious packet drop attacks
 - ✅ Good (>80% median) packet arrival performance in Mobility tests.
-    * Mobility is defined as 50 randomly placed nodes in a 1x1km square, each randomly moving 0-20m every .10s.
+    * Mobility is defined as 50 randomly placed nodes in a 1x1km square, each randomly moving 0-20m every 10s.
     * Mobility testing is performed for 360 iterations of node movement.
     * Packet arrival performance is measured using pings between a subset of randomly selected nodes at least 2 hops apart at each mobility step.
 - 🚧 Scales to meet global demand.
@@ -95,9 +95,9 @@ We need a production-ready [overlay network](https://en.wikipedia.org/wiki/Overl
 We need to improve the Federation protocol to work with servers which frequently go offline and may have 1000s of servers (p2p nodes) in each room.
 
 - 🚧 Implement comprehensive Store-and-Forward event routing capabilities in Matrix to allow nodes to talk to each other even if they aren't online at the same time. Matrix currently has limited support for this via backfilling events.
-    * ✅ Initial design & implementation in Dendrite.
-    * ✅ Integrated into p2p demo apps.
-    * 🚧 Robust to differing levels of use (many user rooms, encrypted rooms, different scenarios of varying offline-ness, etc.).
+    * ✅ Initial design & implementation in Dendrite
+    * ✅ Integrated into p2p demo apps
+    * 🚧 Robust to differing levels of use (many user rooms, encrypted rooms, different scenarios of varying offline-ness, etc.)
 - 🚧 Improve [event authentication rules](https://spec.matrix.org/unstable/server-server-api/#checks-performed-on-receipt-of-a-pdu) when the majority of nodes in the room are unreachable.
     * 🚧 Change the protocol to utilize a Power DAG, and ensure that the Power DAG is shared with all servers in the room. This allows servers to authenticate any incoming event without needing to make additional API calls.
     * ❌ Change the protocol to eagerly connect to servers to ensure we rapidly synchronise Power DAGs, rather than waiting until the user sends a message.
