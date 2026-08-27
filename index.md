@@ -25,7 +25,7 @@ We'll update this site properly once we get a chance, but current status is:
    * The intention is to share its Rust code with the Synapse and Synapse Pro in future (rather than being a divergent evolutionary branch like Dendrite was, which meant halving efforts rather than converging efforts).
    * See the [README](https://github.com/element-hq/neutrino/blob/main/README.md) for more caveats and details.
  * Element X Android has a new P2P fork which embeds Neutrino: [https://github.com/element-hq/element-x-android-neutrino](https://github.com/element-hq/element-x-android-neutrino)
-   * A quick and dirty armv8 APK build can be found [here](https://drive.google.com/file/d/1R8o6pYLBuPr9xwX_FoI0J31GK14ytm7G/view)
+   * A quick and dirty armv8 APK build can be found [here](https://drive.google.com/file/d/1Xhz1b-RQ6V-c3FapECxHI_xaxzhdvzbn/view)
  * We're not planning to build an overlay network. Instead, Neutrino currently uses [Iroh](https://docs.iroh.computer/) for connecting over [BLE](https://docs.iroh.computer/transports/bluetooth) and is designed for smaller meshes, in future using the normal Matrix network to backhaul between local meshes.
 
 For more info, see the slides from DWebCamp 2026: [P2P Matrix - A New Hope](/assets/pdf/2026-07-09%20DWebCamp%20P2P%20Matrix%20-%20A%20New%20Hope.pdf).
